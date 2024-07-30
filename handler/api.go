@@ -11,7 +11,7 @@ type API struct {
 
 func (api *API) SetupRouter() {
 
-	api.Echo.GET("/user/signin", api.UserHandler.HandlerSignIn)
-	api.Echo.GET("/user/signup", api.UserHandler.HandlerSignUp)
+	api.Echo.POST("/user/signin", api.UserHandler.HandlerSignIn)
+	api.Echo.POST("/user/signup", api.UserHandler.HandlerSignUp)
 
 }
